@@ -20,5 +20,6 @@ from . import views
 
 urlpatterns = [
     path('get_question/<int:question_id>/',
-         views.get_question)
+         views.detail),
+    path('latest_questions/', views.index)
 ]
